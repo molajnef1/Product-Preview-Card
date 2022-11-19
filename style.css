@@ -105,7 +105,7 @@ button{
 
 /* Desktop Version */
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 795px) {
     .container{
         width: 50rem;
         display: flex;
