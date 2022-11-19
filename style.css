@@ -59,7 +59,7 @@ body{
 }
 
 .container .info > p{
-    opacity: .7;
+    opacity: .6;
     font-family: var(--Montserrat);
 }
 .perfume{
@@ -107,19 +107,31 @@ button{
 
 @media screen and (min-width: 795px) {
     .container{
-        width: 50rem;
+        width: 45rem;
         display: flex;
         justify-content: center;
-        height: 32rem;
+        height: 34rem;
     }
-    
+
+    .info{
+        margin-right: 2rem;
+    }
+        h1{
+        width: 15rem;
+        
+    }
+    .info > p{
+        width: 16rem;
+    }
+
+
     .container > img{
         width: 50%;
+        margin-right: auto;
         border-top-right-radius: 0;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         object-fit: cover;
-
     }
     .container .mobile{
         display: none;
