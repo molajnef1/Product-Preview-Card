@@ -1,0 +1,129 @@
+/* Starting with Mobile Version*/
+
+/* Importing Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+
+    /* Primary */
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-Dark-cyan: hsl(158, 79%, 15%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    font-size: .875em;
+    --Montserrat: 'Montserrat';
+    --Fraunces: 'Fraunces';
+
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    transform: translate(-50%,-50%);
+    background-color: var(--White);
+    border-radius: 10px;
+}
+.container > img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container .desktop{
+    display: none;
+}
+.info{
+    padding: 2rem;
+}
+
+.container .info h1{
+    font-family: var(--Fraunces);
+    color: var(--Very-dark-blue);
+}
+
+.container .info > p{
+    opacity: .7;
+    font-family: var(--Montserrat);
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.container .info .price{
+    display: flex;
+    align-items: center;
+}
+
+.new-price{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    color: var(--Dark-cyan);
+    font-family: var(--Fraunces);
+}
+
+.old-price{
+    text-decoration: line-through;
+    opacity: .7;
+}
+button{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 1.1rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+.icon{
+    margin-right: 1rem;
+}
+
+
+/* Desktop Version */
+
+@media screen and (min-width: 670px) {
+    .container{
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+    }
+    .container > img{
+        width: 50%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .container .mobile{
+        display: none;
+    }
+    .container .desktop{
+        display: block;
+    }
+    button:hover{
+        background-color: var(--Very-Dark-cyan);
+    }
+}
+
