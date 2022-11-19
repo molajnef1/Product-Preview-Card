@@ -110,7 +110,7 @@ button{
         width: 50rem;
         display: flex;
         justify-content: center;
-        height: 50%;
+        height: 32rem;
     }
     
     .container > img{
