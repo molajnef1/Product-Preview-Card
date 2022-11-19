@@ -44,6 +44,7 @@ body{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    flex-shrink: 0;
 }
 .container .desktop{
     display: none;
@@ -110,6 +111,11 @@ button{
         display: flex;
         justify-content: center;
     }
+
+    .container .info{
+        margin-top: 30px;
+    }
+
     .container > img{
         width: 50%;
         border-top-right-radius: 0;
@@ -121,6 +127,9 @@ button{
     }
     .container .desktop{
         display: block;
+    }
+    button{
+        margin-top: 30px;
     }
     button:hover{
         background-color: var(--Very-Dark-cyan);
